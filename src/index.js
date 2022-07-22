@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { Spin } from 'antd';
+import { AppStore } from './stores';
 import './index.css';
 
 const HomePage = lazy(() => import('./pages/home'));
@@ -14,12 +15,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Suspense fallback={<Spin />}>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="share" element={<SharePage />} />
-        </Route>
-      </Routes>
+      <AppStore.Provider>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="share" element={<SharePage />} />
+          </Route>
+        </Routes>
+      </AppStore.Provider>
     </Suspense>
   </BrowserRouter>
 );
