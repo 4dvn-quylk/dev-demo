@@ -1,0 +1,15 @@
+.app-header {
+  height: 86px !important;
+}
+.app-header .ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.app-header .ant-row {
+  height: 100%;
+}
+
+h1.ant-typography,
+h5.ant-typography {
+  color: white !important;
+}
