@@ -3,6 +3,7 @@ import './index.css';
 const { Paragraph, Title, Text } = Typography;
 
 export const VideoCard = ({
+  videoSrc,
   title,
   sharedUser,
   numberLikes,
@@ -14,7 +15,7 @@ export const VideoCard = ({
       <Row gutter={[24, 12]}>
         <Col md={{ span: 12 }} sm={{ span: 24 }}>
           <iframe
-            src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+            src={videoSrc}
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
