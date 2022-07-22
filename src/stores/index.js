@@ -2,6 +2,7 @@ import { createStore } from './store';
 
 export const initialStore = {
   user: undefined,
+  registered: false,
   listVideos: [
     {
       videoSrc: 'https://www.youtube.com/embed/E7wJTI-1dvQ',
