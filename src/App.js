@@ -3,7 +3,7 @@ import { MainLayout } from './layouts/main-layout';
 import { Container } from './components/container';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <MainLayout children="dasdsa">
@@ -13,6 +13,6 @@ function App() {
       </MainLayout>
     </div>
   );
-}
+};
 
 export default App;

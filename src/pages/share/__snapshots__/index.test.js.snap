@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Share page should render successful 1`] = `
+<div>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div
+      class="ant-spin-container"
+    >
+      <div
+        class="ant-row ant-row-center"
+      >
+        <div
+          class="ant-card ant-card-bordered mt mb"
+          style="width: 400px;"
+        >
+          <div
+            class="ant-card-head"
+          >
+            <div
+              class="ant-card-head-wrapper"
+            >
+              <div
+                class="ant-card-head-title"
+              >
+                Share a Youtube video
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-card-body"
+          >
+            <form
+              autocomplete="off"
+              class="ant-form ant-form-horizontal"
+            >
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-col-8 ant-form-item-label"
+                >
+                  <label
+                    class="ant-form-item-required"
+                    for="url"
+                    title="Youtube URL"
+                  >
+                    Youtube URL
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-col-16 ant-form-item-control"
+                >
+                  <div
+                    class="ant-form-item-control-input"
+                  >
+                    <div
+                      class="ant-form-item-control-input-content"
+                    >
+                      <input
+                        class="ant-input"
+                        id="url"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-col-16 ant-col-offset-8 ant-form-item-control"
+                >
+                  <div
+                    class="ant-form-item-control-input"
+                  >
+                    <div
+                      class="ant-form-item-control-input-content"
+                    >
+                      <button
+                        class="ant-btn ant-btn-primary"
+                        type="submit"
+                      >
+                        <span>
+                          Submit
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

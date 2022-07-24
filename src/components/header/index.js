@@ -13,6 +13,7 @@ export const Header = () => {
   const navigate = useNavigate();
   const [{ user, registered }, updateStore] = useAppStore();
   const [loading, setLoading] = useState(false);
+
   const onFinish = useCallback(
     async (values) => {
       try {
