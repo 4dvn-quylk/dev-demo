@@ -20,3 +20,11 @@ h5,
 p {
   margin: 0 !important;
 }
+
+/* Util classes */
+.mt {
+  margin-top: 1rem;
+}
+.mb {
+  margin-bottom: 1rem;
+}

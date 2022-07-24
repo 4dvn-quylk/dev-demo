@@ -24,3 +24,11 @@ export const logOut = () => {
     }, 500);
   });
 };
+
+export const shareLink = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(true);
+    }, 500);
+  });
+};

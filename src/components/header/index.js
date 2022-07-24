@@ -50,14 +50,14 @@ export const Header = () => {
   };
 
   return (
-    <AntHeader className="app-header">
+    <AntHeader data-testid="app-header" className="app-header">
       <Row justify="space-between" align="middle">
         <Space align="center">
           <Logo />
           <Typography.Title>Funny Movies</Typography.Title>
         </Space>
 
-        <Space align="center" size={16} >
+        <Space align="center" size={16}>
           {!user && (
             <Form onFinish={onFinish} autoComplete="off" layout="inline">
               <Form.Item
