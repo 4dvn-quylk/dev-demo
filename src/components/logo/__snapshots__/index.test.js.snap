@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Logo /> component should render 1`] = `
+<div>
+  <span
+    class="ant-avatar ant-avatar-circle ant-avatar-image"
+    data-testid="c-logo"
+    style="width: 64px; height: 64px; line-height: 64px; font-size: 18px;"
+  >
+    <img
+      alt="header-logo"
+      src="logo.svg"
+    />
+  </span>
+</div>
+`;

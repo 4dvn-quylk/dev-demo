@@ -1,21 +1,21 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { Container } from './index';
+import { MainLayout } from './index';
 
-describe('Test Container component', () => {
+describe('Test MainLayout component', () => {
   test('should render', () => {
-    const { container } = render(<Container />);
-    const component = screen.getByTestId('c-container');
+    const { container } = render(<MainLayout />);
+    const component = screen.getByTestId('t-layout');
     expect(component).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
   test('should have children', () => {
-    render(<Container>hello</Container>);
-    expect(screen.getByText('hello')).toBeTruthy();
+    render(<MainLayout>Main Layout</MainLayout>);
+    expect(screen.getByText('Main Layout')).toBeTruthy();
   });
   test('should have no children', () => {
-    render(<Container />);
+    render(<MainLayout />);
     expect(screen.queryByText('hello')).toBeFalsy();
   });
 });

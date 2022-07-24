@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-container */
 /* eslint-disable testing-library/prefer-screen-queries */
 import '@testing-library/jest-dom';
-import { render, screen, within } from '@testing-library/react'; // (or /dom, /vue, ...)
+import { render, screen, within } from '@testing-library/react';
 import { VideoCard } from './index';
 
 const TEST_DATA = {
@@ -29,9 +29,10 @@ const renderCardEmpty = () =>
 
 describe('Test <VideoCard /> component', () => {
   test('should render', () => {
-    renderCard();
+    const { container } = renderCard();
     const card = screen.getByTestId('c-video-card');
     expect(card).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   test('should have video iframe', () => {
@@ -53,7 +54,6 @@ describe('Test <VideoCard /> component', () => {
     renderCard();
     const likeEl = screen.queryByTestId('test-liked');
     expect(likeEl).toBeInTheDocument();
-    
   });
 
   test('should have dislikes', () => {
@@ -81,9 +81,10 @@ describe('Test <VideoCard /> component', () => {
   });
 
   test('should have no like', () => {
-    renderCardEmpty();
+    const { container } = renderCardEmpty();
     const paragraphEl = screen.queryByTestId('test-liked');
     expect(paragraphEl).not.toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   test('should have no dislike', () => {

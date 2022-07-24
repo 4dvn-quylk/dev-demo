@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Container component should render 1`] = `
+<div>
+  <div
+    class="c-container"
+    data-testid="c-container"
+  />
+</div>
+`;
